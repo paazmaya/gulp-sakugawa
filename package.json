@@ -1,0 +1,48 @@
+{
+  "name": "gulp-sakugawa",
+  "version": "0.1.0",
+  "description": "Run Sakugawa via gulp for CSS splitting, filtering and organising",
+  "homepage": "https://github.com/paazmaya/gulp-sakugawa",
+  "author": {
+    "name": "Juga Paazmaya",
+    "email": "olavic@gmail.com",
+    "url": "http://paazmaya.com"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "",
+    "coverage": ""
+  },
+  "files": [
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/paazmaya/gulp-sakugawa.git"
+  },
+  "keywords": [
+    "css",
+    "selector",
+    "ie8",
+    "ie9",
+    "media-query",
+    "split",
+    "filter",
+    "organize"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/paazmaya/gulp-sakugawa/blob/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/paazmaya/gulp-sakugawa/issues"
+  },
+  "dependencies": {
+    "sakugawa": "~0.1"
+  },
+  "devDependencies": {
+  }
+}
