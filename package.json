@@ -8,7 +8,7 @@
     "email": "olavic@gmail.com",
     "url": "http://paazmaya.com"
   },
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "",
     "coverage": ""
@@ -40,9 +40,13 @@
   "bugs": {
     "url": "https://github.com/paazmaya/gulp-sakugawa/issues"
   },
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "dependencies": {
     "sakugawa": "~0.1"
   },
   "devDependencies": {
+    "gulp": "~3.8"
   }
 }
