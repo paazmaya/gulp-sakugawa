@@ -1,3 +1,14 @@
+/**
+ * gulp-sakugawa
+ * https://github.com/paazmaya/gulp-sakugawa
+ *
+ * Copyright (c) Juga Paazmaya
+ * Licensed under the MIT license.
+ */
+
+'use strict';
+
+
 // through2 is a thin wrapper around node transform streams
 var through = require('through2');
 var gutil = require('gulp-util');
@@ -5,14 +16,8 @@ var PluginError = gutil.PluginError;
 
 var sakugawa = require('sakugawa');
 
-// consts
 const PLUGIN_NAME = 'gulp-sakugawa';
 
-function prefixStream(prefixText) {
-  var stream = through();
-  stream.write(prefixText);
-  return stream;
-}
 
 // plugin level function (dealing with files)
 function gulpSakugawa(prefixText) {
