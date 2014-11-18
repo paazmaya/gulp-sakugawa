@@ -9,10 +9,13 @@
 'use strict';
 
 var gulp = require('gulp'),
-  sakugawa = require('gulp-sakugawa');
+  gulpSakugawa = require('./index');
 
 gulp.task('default', function() {
   gulp.src('pure-min.css')
-    .pipe(sakugawa())
+    .pipe(gulpSakugawa({
+      maxSelectors: 400,
+      mediaQueries: 'separate'
+    }))
     .pipe(gulp.dest('.'));
 });
