@@ -11,44 +11,42 @@
 
 // through2 is a thin wrapper around node transform streams
 var through = require('through2');
-var gutil = require('gulp-util');
-var PluginError = gutil.PluginError;
+var File = require('vinyl');
+var path = require('path');
 
 var sakugawa = require('sakugawa');
 
-const PLUGIN_NAME = 'gulp-sakugawa';
+var StringDecoder = require('string_decoder').StringDecoder;
 
 
-// plugin level function (dealing with files)
-function gulpSakugawa(prefixText) {
-  if (!prefixText) {
-    throw new PluginError(PLUGIN_NAME, 'Missing prefix text!');
-  }
+module.exports = function gulpSakugawa(opts) {
+  var options = {
+    maxSelectors: opts.maxSelectors || 4090,
+    mediaQueries: opts.mediaQueries || 'normal'
+  };
+  var suffix = opts.suffix || '_';
 
-  prefixText = new Buffer(prefixText); // allocate ahead of time
+  var stream = through.obj(function(chunk, enc, cb) {
+    if (!chunk.isNull()) {
+      var _self = this;
+      var decoder = new StringDecoder(enc);
+      var css = decoder.write(chunk.contents);
 
-  // creating a stream through which each file will pass
-  var stream = through.obj(function(file, enc, cb) {
-    if (file.isNull()) {
-      // do nothing if no contents
+      var pages = sakugawa(css, options);
+
+      pages.forEach(function (page, index) {
+        // add new source map file to stream
+        var cssFile = new File({
+          cwd: chunk.cwd,
+          base: chunk.base,
+          path: path.join(chunk.base, '', chunk.relative) + suffix + (index + 1) + '.css',
+          contents: new Buffer(page)
+        });
+        _self.push(cssFile);
+      });
     }
-
-    if (file.isBuffer()) {
-      file.contents = Buffer.concat([prefixText, file.contents]);
-    }
-
-    if (file.isStream()) {
-      file.contents = file.contents.pipe(prefixStream(prefixText));
-    }
-
-    this.push(file);
-
     return cb();
   });
 
-  // returning the file stream
   return stream;
 };
-
-// exporting the plugin main function
-module.exports = gulpSakugawa;

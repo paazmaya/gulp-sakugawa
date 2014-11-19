@@ -15,7 +15,8 @@ gulp.task('default', function() {
   gulp.src('pure-min.css')
     .pipe(gulpSakugawa({
       maxSelectors: 400,
-      mediaQueries: 'separate'
+      mediaQueries: 'separate',
+      suffix: '_'
     }))
     .pipe(gulp.dest('.'));
 });

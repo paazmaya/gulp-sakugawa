@@ -25,6 +25,20 @@ Example configuration against [Pure CSS](http://purecss.io/ "A set of small, res
 which results in two files, `pure-min_1.css` and `pure-min_2.css` in which the latter
 contains all media queries.
 
+```js
+var gulp = require('gulp'),
+  gulpSakugawa = require('gulp-sakugawa');
+
+gulp.task('default', function() {
+  gulp.src('pure-min.css')
+    .pipe(gulpSakugawa({
+      maxSelectors: 400,
+      mediaQueries: 'separate',
+      suffix: '_'
+    }))
+    .pipe(gulp.dest('.'));
+});
+```
 
 The CSS file used in the example can be retrieved with:
 
@@ -34,7 +48,7 @@ wget http://yui.yahooapis.com/pure/0.5.0/pure-min.css
 
 ## Version history
 
-None yet..
+* v0.2.0 (2014-11-19) First release, directly paired with Speed improvement release of Sakugawa
 
 ## License
 
