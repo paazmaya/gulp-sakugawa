@@ -1,17 +1,33 @@
 # gulp-sakugawa (グルプ佐久川)
 
-> Run [Sakugawa](https://github.com/paazmaya/sakugawa "CSS splitter, filter and organiser")
-> via [gulp](http://gulpjs.com/ "The streaming build system"), for CSS splitting, filtering and organising.
+> Run [Sakugawa][] via [gulp](http://gulpjs.com/ "The streaming build system"),
+> for CSS splitting, filtering and organising.
 
 ![Mr Sakugawa enjoying the taste of gulp](./logo.png)
+
 [![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/gulp-sakugawa/index)](https://github.com/igrigorik/ga-beacon)
 [![Dependency Status](https://david-dm.org/paazmaya/gulp-sakugawa.svg)](https://david-dm.org/paazmaya/gulp-sakugawa)
 [![devDependency Status](https://david-dm.org/paazmaya/gulp-sakugawa/dev-status.svg)](https://david-dm.org/paazmaya/gulp-sakugawa#info=devDependencies)
 
+[Internet Explorer versions from 6 up to 9 come with a limitation][ieinternals] for
+selectors present in a single CSS file. This limitation of 4095 selectors created the
+need for CSS splitter, which might be the main use case of this task runner plugin.
+
+Since IE8 and earlier, do not support media queries, but IE9 does, there is an option for handling
+media queries differently, based on the targeted IE version. By separating media queries in
+to a different file, it will allow the to include that CSS file conditionally only when
+IE9 is being used. Ideally this would reduce the amount of bytes downloaded by IE8, which
+cannot handle the media queries anyhow, and thus prevent downloading something that is not
+even used.
+
+Internally this gulp task uses [Sakugawa][], thus in the case of any problems regarding the
+resulting output or input handling, and also for any feature requests, please refer to the
+[issues at Sakugawa project](https://github.com/paazmaya/sakugawa/issues "Issues for Sakugawa").
+
 
 ## Installation
 
-```shell
+```sh
 npm install gulp-sakugawa --save-dev
 ```
 
@@ -55,3 +71,7 @@ wget http://yui.yahooapis.com/pure/0.5.0/pure-min.css
 Copyright (c) Juga Paazmaya <olavic@gmail.com>
 
 Licensed under the [MIT license](LICENSE).
+
+
+[Sakugawa]: https://github.com/paazmaya/sakugawa "CSS splitter, filter and organiser"
+[ieinternals]: http://blogs.msdn.com/b/ieinternals/archive/2011/05/14/10164546.aspx "Stylesheet Limits in Internet Explorer"
