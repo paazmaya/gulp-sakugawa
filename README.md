@@ -6,8 +6,8 @@
 ![Mr Sakugawa enjoying the taste of gulp](./logo.png)
 
 [![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/gulp-sakugawa/index)](https://github.com/igrigorik/ga-beacon)
-[![Dependency Status](https://david-dm.org/paazmaya/gulp-sakugawa.svg)](https://david-dm.org/paazmaya/gulp-sakugawa)
-[![devDependency Status](https://david-dm.org/paazmaya/gulp-sakugawa/dev-status.svg)](https://david-dm.org/paazmaya/gulp-sakugawa#info=devDependencies)
+[![Dependency Status](//img.shields.io/david-dm/paazmaya/gulp-sakugawa.svg?style=flat-square)](https://david-dm.org/paazmaya/gulp-sakugawa)
+[![devDependency Status](//img.shields.io/david-dm/paazmaya/gulp-sakugawa/dev-status.svg?style=flat-square)](https://david-dm.org/paazmaya/gulp-sakugawa#info=devDependencies)
 
 [Internet Explorer versions from 6 up to 9 come with a limitation][ieinternals] for
 selectors present in a single CSS file. This limitation of 4095 selectors created the
@@ -15,7 +15,7 @@ need for CSS splitter, which might be the main use case of this task runner plug
 
 Since IE8 and earlier, do not support media queries, but IE9 does, there is an option for handling
 media queries differently, based on the targeted IE version. By separating media queries in
-to a different file, it will allow the to include that CSS file conditionally only when
+to a different file, it will allow the to include that CSS file [conditionally][] only when
 IE9 is being used. Ideally this would reduce the amount of bytes downloaded by IE8, which
 cannot handle the media queries anyhow, and thus prevent downloading something that is not
 even used.
@@ -75,3 +75,4 @@ Licensed under the [MIT license](LICENSE).
 
 [Sakugawa]: https://github.com/paazmaya/sakugawa "CSS splitter, filter and organiser"
 [ieinternals]: http://blogs.msdn.com/b/ieinternals/archive/2011/05/14/10164546.aspx "Stylesheet Limits in Internet Explorer"
+[conditionally]: http://www.quirksmode.org/css/condcom.html "Conditional comments"
