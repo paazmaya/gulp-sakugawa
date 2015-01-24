@@ -63,6 +63,10 @@ The CSS file used in the example can be retrieved with:
 wget http://yui.yahooapis.com/pure/0.5.0/pure-min.css
 ```
 
+## Contributing
+
+[Please refer to a GitHub blog post on how to create somewhat perfect pull request.](https://github.com/blog/1943-how-to-write-the-perfect-pull-request "How to write the perfect pull request")
+
 ## Version history
 
 * v0.2.0 (2014-11-19) First release, directly paired with Speed improvement release of Sakugawa
