@@ -22,6 +22,7 @@ var StringDecoder = require('string_decoder').StringDecoder;
 module.exports = function gulpSakugawa(opts) {
   var options = {
     maxSelectors: opts.maxSelectors || 4090,
+    minSheets: opts.minSheets || 1,
     mediaQueries: opts.mediaQueries || 'normal'
   };
   var suffix = opts.suffix || '_';

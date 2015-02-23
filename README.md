@@ -69,6 +69,7 @@ wget http://yui.yahooapis.com/pure/0.5.0/pure-min.css
 
 ## Version history
 
+* v0.3.0 (2015-02-23) Update Sakugawa to `v0.3.0` which adds the `minSheets` option
 * v0.2.0 (2014-11-19) First release, directly paired with Speed improvement release of Sakugawa
 
 ## License
