@@ -1,6 +1,6 @@
 {
   "name": "gulp-sakugawa",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Run Sakugawa via gulp for CSS splitting, filtering and organising",
   "homepage": "https://github.com/paazmaya/gulp-sakugawa",
   "author": {
@@ -46,7 +46,7 @@
     "node": ">=0.10.0"
   },
   "dependencies": {
-    "sakugawa": "~0.3",
+    "sakugawa": "~0.4",
     "through2": "~0.6",
     "vinyl": "~0.4"
   },
