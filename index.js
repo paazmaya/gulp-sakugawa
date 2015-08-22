@@ -32,6 +32,8 @@ module.exports = function gulpSakugawa(opts) {
       var _self = this;
       var decoder = new StringDecoder(enc);
       var css = decoder.write(chunk.contents);
+      var extension = chunk.relative.split('.').pop().toLowerCase();
+      var filename = (extension === 'css' ? chunk.relative.substring(0, chunk.relative.length - 4) : chunk.relative);
 
       var pages = sakugawa(css, options);
 
@@ -40,7 +42,7 @@ module.exports = function gulpSakugawa(opts) {
         var cssFile = new File({
           cwd: chunk.cwd,
           base: chunk.base,
-          path: path.join(chunk.base, '', chunk.relative) + suffix + (index + 1) + '.css',
+          path: path.join(chunk.base, '', filename) + suffix + (index + 1) + '.css',
           contents: new Buffer(page)
         });
         _self.push(cssFile);
