@@ -69,7 +69,7 @@ wget http://yui.yahooapis.com/pure/0.5.0/pure-min.css
 
 ## Version history
 
-* v0.4.1 (2015-06-21) Fix bug where output filename extensions were incorrect
+* v0.4.1 (2015-09-03) Output filenames were not as documented, fixed via #10
 * v0.4.0 (2015-03-11) Update Sakugawa to `v0.4.0` which preserves existing `@charset` rules to all resulting files
 * v0.3.0 (2015-02-23) Update Sakugawa to `v0.3.0` which adds the `minSheets` option
 * v0.2.0 (2014-11-19) First release, directly paired with Speed improvement release of Sakugawa
