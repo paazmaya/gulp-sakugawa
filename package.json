@@ -48,7 +48,7 @@
   "dependencies": {
     "sakugawa": "~0.4",
     "through2": "^2.0.0",
-    "vinyl": "^0.5.0"
+    "vinyl": "^1.0.0"
   },
   "devDependencies": {
     "gulp": "^3.9.0"
