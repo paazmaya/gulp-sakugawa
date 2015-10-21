@@ -76,7 +76,7 @@ wget http://yui.yahooapis.com/pure/0.5.0/pure-min.css
 
 ## License
 
-Copyright (c) Juga Paazmaya <olavic@gmail.com>
+Copyright (c) Juga Paazmaya <paazmaya@yahoo.com>
 
 Licensed under the [MIT license](LICENSE).
 
