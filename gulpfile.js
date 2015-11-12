@@ -2,13 +2,13 @@
  * gulp-sakugawa
  * https://github.com/paazmaya/gulp-sakugawa
  *
- * Copyright (c) Juga Paazmaya
+ * Copyright (c) Juga Paazmaya <paazmaya@yahoo.com> (http://paazmaya.fi)
  * Licensed under the MIT license.
  */
 
 'use strict';
 
-var gulp = require('gulp'),
+const gulp = require('gulp'),
   gulpSakugawa = require('./index');
 
 gulp.task('default', function() {

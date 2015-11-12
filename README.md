@@ -28,6 +28,8 @@ resulting output or input handling, and also for any feature requests, please re
 
 ## Installation
 
+Please note that Node.js version minimum of `4.2.0` is required to use this plugin.
+
 ```sh
 npm install gulp-sakugawa --save-dev
 ```
@@ -69,14 +71,14 @@ wget http://yui.yahooapis.com/pure/0.5.0/pure-min.css
 
 ## Version history
 
-* v0.4.1 (2015-09-03) Output filenames were not as documented, fixed via #10
-* v0.4.0 (2015-03-11) Update Sakugawa to `v0.4.0` which preserves existing `@charset` rules to all resulting files
-* v0.3.0 (2015-02-23) Update Sakugawa to `v0.3.0` which adds the `minSheets` option
-* v0.2.0 (2014-11-19) First release, directly paired with Speed improvement release of Sakugawa
+* `v0.4.1` (2015-09-03) Output filenames were not as documented, fixed via #10
+* `v0.4.0` (2015-03-11) Update Sakugawa to `v0.4.0` which preserves existing `@charset` rules to all resulting files
+* `v0.3.0` (2015-02-23) Update Sakugawa to `v0.3.0 which adds the `minSheets` option
+* `v0.2.0` (2014-11-19) First release, directly paired with Speed improvement release of Sakugawa
 
 ## License
 
-Copyright (c) Juga Paazmaya <paazmaya@yahoo.com>
+Copyright (c) [Juga Paazmaya <paazmaya@yahoo.com>](http://paazmaya.fi)
 
 Licensed under the [MIT license](LICENSE).
 

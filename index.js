@@ -2,7 +2,7 @@
  * gulp-sakugawa
  * https://github.com/paazmaya/gulp-sakugawa
  *
- * Copyright (c) Juga Paazmaya
+ * Copyright (c) Juga Paazmaya <paazmaya@yahoo.com> (http://paazmaya.fi)
  * Licensed under the MIT license.
  */
 
@@ -10,13 +10,13 @@
 
 
 // through2 is a thin wrapper around node transform streams
-var through = require('through2');
-var File = require('vinyl');
-var path = require('path');
+const through = require('through2');
+const File = require('vinyl');
+const path = require('path');
 
-var sakugawa = require('sakugawa');
+const sakugawa = require('sakugawa');
 
-var StringDecoder = require('string_decoder').StringDecoder;
+const StringDecoder = require('string_decoder').StringDecoder;
 
 
 module.exports = function gulpSakugawa(opts) {
