@@ -33,7 +33,7 @@ module.exports = function gulpSakugawa(opts) {
       var decoder = new StringDecoder(enc);
       var css = decoder.write(chunk.contents);
       var extension = chunk.relative.split('.').pop().toLowerCase();
-      var filename = (extension === 'css' ? chunk.relative.substring(0, chunk.relative.length - 4) : chunk.relative);
+      var filename = extension === 'css' ? chunk.relative.substring(0, chunk.relative.length - 4) : chunk.relative;
 
       var pages = sakugawa(css, options);
 
