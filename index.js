@@ -37,16 +37,19 @@ module.exports = function gulpSakugawa(opts) {
 
       var pages = sakugawa(css, options);
 
-      pages.forEach(function (page, index) {
-        // add new source map file to stream
-        var cssFile = new File({
-          cwd: chunk.cwd,
-          base: chunk.base,
-          path: path.join(chunk.base, '', filename) + suffix + (index + 1) + '.css',
-          contents: new Buffer(page)
+      if (pages.length > 1) {
+        // only create a new file if splitting is required
+        pages.forEach(function(page, index) {
+          // add new source map file to stream
+          var cssFile = new File({
+            cwd: chunk.cwd,
+            base: chunk.base,
+            path: path.join(chunk.base, '', filename) + suffix + (index + 1) + '.css',
+            contents: new Buffer(page)
+          });
+          _self.push(cssFile);
         });
-        _self.push(cssFile);
-      });
+      }
     }
     return cb();
   });
