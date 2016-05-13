@@ -1,6 +1,6 @@
 {
   "name": "gulp-sakugawa",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "Run Sakugawa via gulp for CSS splitting, filtering and organising",
   "homepage": "https://github.com/paazmaya/gulp-sakugawa",
   "author": {
@@ -10,7 +10,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "",
+    "test": "npm run lint",
     "coverage": "",
     "lint": "eslint -c .eslintrc.json *.js"
   },
@@ -42,7 +42,7 @@
     "node": ">=4.2.0"
   },
   "dependencies": {
-    "sakugawa": "~0.5",
+    "sakugawa": "^0.5.1",
     "through2": "^2.0.1",
     "vinyl": "^1.1.1"
   },

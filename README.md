@@ -8,7 +8,7 @@
 [![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/gulp-sakugawa/index?flat)](https://github.com/igrigorik/ga-beacon)
 [![Dependency Status](https://img.shields.io/david/paazmaya/gulp-sakugawa.svg?style=flat-square)](https://david-dm.org/paazmaya/gulp-sakugawa)
 [![devDependency Status](https://img.shields.io/david/dev/paazmaya/gulp-sakugawa.svg?style=flat-square)](https://david-dm.org/paazmaya/gulp-sakugawa#info=devDependencies)
-[![Built with gulp](http://img.shields.io/badge/gulp-3.8-blue.svg?style=flat-square)](http://gulpjs.com/)
+[![Built with gulp](http://img.shields.io/badge/gulp-3.9-blue.svg?style=flat-square)](http://gulpjs.com/)
 
 [Internet Explorer versions from 6 up to 9 come with a limitation][ieinternals] for
 selectors present in a single CSS file. This limitation of 4095 selectors created the
@@ -71,12 +71,16 @@ wget http://yui.yahooapis.com/pure/0.5.0/pure-min.css
 
 ## Version history
 
+* `v0.5.0` (2016-05-13)
+  - Minimum supported version of Node.js is `4.2.0` (LTS)
+  - ESLint 2 and shared configuration #15
+  - Minimum supported `sakugawa` is `v0.5.0`
 * `v0.4.1` (2015-09-03)
   - Output filenames were not as documented, fixed via #10
 * `v0.4.0` (2015-03-11)
   - Update Sakugawa to `v0.4.0` which preserves existing `@charset` rules to all resulting files
 * `v0.3.0` (2015-02-23)
-  - Update Sakugawa to `v0.3.0 which adds the `minSheets` option
+  - Update Sakugawa to `v0.3.0` which adds the `minSheets` option
 * `v0.2.0` (2014-11-19)
   - First release, directly paired with Speed improvement release of Sakugawa
 
