@@ -8,11 +8,11 @@
 
 'use strict';
 
+const path = require('path');
 
 // through2 is a thin wrapper around node transform streams
 const through = require('through2');
 const File = require('vinyl');
-const path = require('path');
 
 const sakugawa = require('sakugawa');
 
@@ -20,32 +20,31 @@ const StringDecoder = require('string_decoder').StringDecoder;
 
 
 module.exports = function gulpSakugawa(opts) {
-  var options = {
-    maxSelectors: opts.maxSelectors || 4090,
-    minSheets: opts.minSheets || 1,
-    mediaQueries: opts.mediaQueries || 'normal'
+  const options = {
+    maxSelectors: typeof opts.maxSelectors === 'number' ? opts.maxSelectors : 4090,
+    minSheets: typeof opts.minSheets === 'number' ? opts.minSheets : 1,
+    mediaQueries: typeof opts.mediaQueries === 'string' ? opts.mediaQueries : 'normal'
   };
-  var suffix = opts.suffix || '_';
+  const suffix = typeof opts.suffix === 'string' ? opts.suffix : '_';
 
-  var stream = through.obj(function(chunk, enc, cb) {
+  const stream = through.obj(function(chunk, enc, cb) {
     if (!chunk.isNull()) {
-      var _self = this;
-      var decoder = new StringDecoder(enc);
-      var css = decoder.write(chunk.contents);
-      var extension = chunk.relative.split('.').pop().toLowerCase();
-      var filename = extension === 'css' ? chunk.relative.substring(0, chunk.relative.length - 4) : chunk.relative;
+      const decoder = new StringDecoder(enc);
+      const css = decoder.write(chunk.contents);
+      const extension = chunk.relative.split('.').pop().toLowerCase();
+      const filename = extension === 'css' ? chunk.relative.substring(0, chunk.relative.length - 4) : chunk.relative;
 
-      var pages = sakugawa(css, options);
+      const pages = sakugawa(css, options);
 
-      pages.forEach(function (page, index) {
+      pages.forEach((page, index) => {
         // add new source map file to stream
-        var cssFile = new File({
+        const cssFile = new File({
           cwd: chunk.cwd,
           base: chunk.base,
           path: path.join(chunk.base, '', filename) + suffix + (index + 1) + '.css',
           contents: new Buffer(page)
         });
-        _self.push(cssFile);
+        this.push(cssFile);
       });
     }
     return cb();

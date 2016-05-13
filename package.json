@@ -11,7 +11,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run lint",
-    "coverage": "",
+    "coverage": "istanbul cover tests/index_tape.js && codecov",
     "lint": "eslint -c .eslintrc.json *.js"
   },
   "files": [
@@ -47,6 +47,7 @@
     "vinyl": "^1.1.1"
   },
   "devDependencies": {
+    "codecov": "^1.0.1",
     "eslint": "^2.9.0",
     "eslint-config-paazmaya": "^1.0.1",
     "gulp": "^3.9.1"

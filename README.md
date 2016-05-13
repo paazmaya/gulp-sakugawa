@@ -1,6 +1,6 @@
 # gulp-sakugawa (グルプ佐久川)
 
-> Run [Sakugawa][] via [gulp](http://gulpjs.com/ "The streaming build system"),
+> Run [`sakugawa`][sakugawa] via [gulp](http://gulpjs.com/ "The streaming build system"),
 > for CSS splitting, filtering and organising.
 
 ![Mr Sakugawa enjoying the taste of gulp](./logo.png)
@@ -8,6 +8,8 @@
 [![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/gulp-sakugawa/index?flat)](https://github.com/igrigorik/ga-beacon)
 [![Dependency Status](https://img.shields.io/david/paazmaya/gulp-sakugawa.svg?style=flat-square)](https://david-dm.org/paazmaya/gulp-sakugawa)
 [![devDependency Status](https://img.shields.io/david/dev/paazmaya/gulp-sakugawa.svg?style=flat-square)](https://david-dm.org/paazmaya/gulp-sakugawa#info=devDependencies)
+[![wercker status](https://app.wercker.com/status/ece6b1297280d99cb32271fc8c1daf5b/s "wercker status")](https://app.wercker.com/project/bykey/ece6b1297280d99cb32271fc8c1daf5b)
+[![codecov](https://codecov.io/gh/paazmaya/gulp-sakugawa/branch/master/graph/badge.svg)](https://codecov.io/gh/paazmaya/gulp-sakugawa)
 [![Built with gulp](http://img.shields.io/badge/gulp-3.9-blue.svg?style=flat-square)](http://gulpjs.com/)
 
 [Internet Explorer versions from 6 up to 9 come with a limitation][ieinternals] for
@@ -21,7 +23,7 @@ IE9 is being used. Ideally this would reduce the amount of bytes downloaded by I
 cannot handle the media queries anyhow, and thus prevent downloading something that is not
 even used.
 
-Internally this gulp task uses [Sakugawa][], thus in the case of any problems regarding the
+Internally this gulp task uses [`sakugawa`][sakugawa], thus in the case of any problems regarding the
 resulting output or input handling, and also for any feature requests, please refer to the
 [issues at Sakugawa project](https://github.com/paazmaya/sakugawa/issues "Issues for Sakugawa").
 
