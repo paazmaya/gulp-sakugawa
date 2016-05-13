@@ -9,7 +9,7 @@ build:
     - script:
         name: ESLint everything!
         code: npm run lint
-    - npm-test
-    - script:
-        name: Code coverage with Istanbul and post to codecov.io
-        code: npm run coverage
+    #- npm-test
+    #- script:
+    #    name: Code coverage with Istanbul and post to codecov.io
+    #    code: npm run coverage
