@@ -42,14 +42,14 @@
     "node": ">=4.2.0"
   },
   "dependencies": {
-    "sakugawa": "^0.5.1",
+    "sakugawa": "^0.5.2",
     "through2": "^2.0.1",
     "vinyl": "^1.1.1"
   },
   "devDependencies": {
     "codecov": "^1.0.1",
     "eslint": "^3.0.1",
-    "eslint-config-paazmaya": "^2.2.0",
+    "eslint-config-paazmaya": "^2.3.0",
     "gulp": "^3.9.1"
   }
 }
