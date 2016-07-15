@@ -6,7 +6,7 @@
   "author": {
     "name": "Juga Paazmaya",
     "email": "paazmaya@yahoo.com",
-    "url": "http://paazmaya.fi"
+    "url": "https://paazmaya.fi"
   },
   "main": "index.js",
   "scripts": {
@@ -48,7 +48,7 @@
   },
   "devDependencies": {
     "codecov": "^1.0.1",
-    "eslint": "^3.0.0",
+    "eslint": "^3.0.1",
     "eslint-config-paazmaya": "^2.2.0",
     "gulp": "^3.9.1"
   }
