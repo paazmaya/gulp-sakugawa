@@ -9,6 +9,7 @@
 [![Dependency Status](https://img.shields.io/david/paazmaya/gulp-sakugawa.svg?style=flat-square)](https://david-dm.org/paazmaya/gulp-sakugawa)
 [![devDependency Status](https://img.shields.io/david/dev/paazmaya/gulp-sakugawa.svg?style=flat-square)](https://david-dm.org/paazmaya/gulp-sakugawa#info=devDependencies)
 [![wercker status](https://app.wercker.com/status/ece6b1297280d99cb32271fc8c1daf5b/s "wercker status")](https://app.wercker.com/project/bykey/ece6b1297280d99cb32271fc8c1daf5b)
+[![Windows build status](https://ci.appveyor.com/api/projects/status/paau5nxur49cx2ei/branch/master?svg=true)](https://ci.appveyor.com/project/paazmaya/gulp-sakugawa/branch/master)
 [![codecov](https://codecov.io/gh/paazmaya/gulp-sakugawa/branch/master/graph/badge.svg)](https://codecov.io/gh/paazmaya/gulp-sakugawa)
 [![Built with gulp](http://img.shields.io/badge/gulp-3.9-blue.svg?style=flat-square)](http://gulpjs.com/)
 
