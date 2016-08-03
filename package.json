@@ -44,12 +44,12 @@
   "dependencies": {
     "sakugawa": "^0.5.2",
     "through2": "^2.0.1",
-    "vinyl": "^1.1.1"
+    "vinyl": "^1.2.0"
   },
   "devDependencies": {
     "codecov": "^1.0.1",
-    "eslint": "^3.0.1",
-    "eslint-config-paazmaya": "^2.3.0",
+    "eslint": "^3.2.2",
+    "eslint-config-paazmaya": "^2.3.1",
     "gulp": "^3.9.1"
   }
 }
