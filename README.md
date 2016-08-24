@@ -74,6 +74,10 @@ wget http://yui.yahooapis.com/pure/0.5.0/pure-min.css
 
 ## Version history
 
+* `v0.5.1` (2016-08-24)
+  - Better type checking of options
+  - Update dependencies
+  - Start testing in Windows at AppVeyor
 * `v0.5.0` (2016-05-13)
   - Minimum supported version of Node.js is `4.2.0` (LTS)
   - ESLint 2 and shared configuration #15
