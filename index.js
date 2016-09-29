@@ -21,11 +21,19 @@ const StringDecoder = require('string_decoder').StringDecoder;
 
 module.exports = function gulpSakugawa(opts) {
   const options = {
-    maxSelectors: typeof opts.maxSelectors === 'number' ? opts.maxSelectors : 4090,
-    minSheets: typeof opts.minSheets === 'number' ? opts.minSheets : 1,
-    mediaQueries: typeof opts.mediaQueries === 'string' ? opts.mediaQueries : 'normal'
+    maxSelectors: typeof opts.maxSelectors === 'number' ?
+      opts.maxSelectors :
+      4090,
+    minSheets: typeof opts.minSheets === 'number' ?
+      opts.minSheets :
+      1,
+    mediaQueries: typeof opts.mediaQueries === 'string' ?
+      opts.mediaQueries :
+      'normal'
   };
-  const suffix = typeof opts.suffix === 'string' ? opts.suffix : '_';
+  const suffix = typeof opts.suffix === 'string' ?
+    opts.suffix :
+    '_';
 
   const stream = through.obj(function(chunk, enc, cb) {
     if (!chunk.isNull()) {
@@ -47,6 +55,7 @@ module.exports = function gulpSakugawa(opts) {
         this.push(cssFile);
       });
     }
+
     return cb();
   });
 
