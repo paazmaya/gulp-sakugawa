@@ -40,7 +40,9 @@ module.exports = function gulpSakugawa(opts) {
       const decoder = new StringDecoder(enc);
       const css = decoder.write(chunk.contents);
       const extension = chunk.relative.split('.').pop().toLowerCase();
-      const filename = extension === 'css' ? chunk.relative.substring(0, chunk.relative.length - 4) : chunk.relative;
+      const filename = extension === 'css' ?
+        chunk.relative.substring(0, chunk.relative.length - 4) :
+        chunk.relative;
 
       const pages = sakugawa(css, options);
 
