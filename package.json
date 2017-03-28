@@ -43,13 +43,13 @@
   },
   "dependencies": {
     "sakugawa": "^0.5.3",
-    "through2": "^2.0.1",
+    "through2": "^2.0.3",
     "vinyl": "^2.0.1"
   },
   "devDependencies": {
-    "codecov": "^1.0.1",
-    "eslint": "^3.10.2",
-    "eslint-config-paazmaya": "^3.1.0",
+    "codecov": "^2.1.0",
+    "eslint": "^3.18.0",
+    "eslint-config-paazmaya": "^3.2.0",
     "gulp": "^3.9.1"
   }
 }
