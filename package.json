@@ -12,7 +12,7 @@
   "scripts": {
     "test": "npm run lint",
     "coverage": "nyc npm test && codecov",
-    "lint": "eslint -c .eslintrc.json *.js"
+    "lint": "eslint *.js"
   },
   "files": [
     "index.js",
@@ -44,11 +44,11 @@
   "dependencies": {
     "sakugawa": "^0.5.3",
     "through2": "^2.0.3",
-    "vinyl": "^2.0.1"
+    "vinyl": "^2.0.2"
   },
   "devDependencies": {
     "codecov": "^2.1.0",
-    "eslint": "^3.18.0",
+    "eslint": "^3.19.0",
     "eslint-config-paazmaya": "^3.2.0",
     "gulp": "^3.9.1"
   }
