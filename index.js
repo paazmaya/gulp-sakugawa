@@ -18,7 +18,6 @@ const sakugawa = require('sakugawa');
 
 const StringDecoder = require('string_decoder').StringDecoder;
 
-
 module.exports = function gulpSakugawa(opts) {
   const options = {
     maxSelectors: typeof opts.maxSelectors === 'number' ?
@@ -52,7 +51,7 @@ module.exports = function gulpSakugawa(opts) {
           cwd: chunk.cwd,
           base: chunk.base,
           path: path.join(chunk.base, '', filename) + suffix + (index + 1) + '.css',
-          contents: new Buffer(page)
+          contents: Buffer.from(page)
         });
         this.push(cssFile);
       });
