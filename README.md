@@ -79,8 +79,9 @@ There should be no errors appearing after any JavaScript file changes.
 
 ## Version history
 
-* `v0.6.0` (2017)
+* `v0.6.0` (2017-06-28)
   - Minimum supported Node.js version is now `6.9.5`
+  - All dependencies are up to date again
 * `v0.5.1` (2016-08-24)
   - Better type checking of options
   - Update dependencies
