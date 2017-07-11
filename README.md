@@ -31,7 +31,7 @@ resulting output or input handling, and also for any feature requests, please re
 
 ## Installation
 
-Please note that Node.js version minimum of `6.9.5` is required to use this plugin.
+Please note that Node.js version minimum of `6.9.5` (LTS) is required to use this plugin.
 
 ```sh
 npm install gulp-sakugawa --save-dev
@@ -80,7 +80,7 @@ There should be no errors appearing after any JavaScript file changes.
 ## Version history
 
 * `v0.6.0` (2017-06-28)
-  - Minimum supported Node.js version is now `6.9.5`
+  - Minimum Node.js version lifted from `4.2.0` to `6.9.5`
   - All dependencies are up to date again
 * `v0.5.1` (2016-08-24)
   - Better type checking of options
