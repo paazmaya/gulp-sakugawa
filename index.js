@@ -34,7 +34,7 @@ module.exports = function gulpSakugawa(opts) {
     opts.suffix :
     '_';
 
-  const stream = through.obj(function(chunk, enc, cb) {
+  const stream = through.obj(function doStuff(chunk, enc, cb) {
     if (!chunk.isNull()) {
       const decoder = new StringDecoder(enc);
       const css = decoder.write(chunk.contents);

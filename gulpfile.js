@@ -8,10 +8,11 @@
 
 'use strict';
 
-const gulp = require('gulp'),
-  gulpSakugawa = require('./index');
+const gulp = require('gulp');
 
-gulp.task('default', function() {
+const gulpSakugawa = require('./index');
+
+gulp.task('default', function task() {
   gulp.src('pure-min.css')
     .pipe(gulpSakugawa({
       maxSelectors: 400,
