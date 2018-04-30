@@ -30,7 +30,7 @@ resulting output or input handling, and also for any feature requests, please re
 
 ## Installation
 
-Please note that [Node.js](https://nodejs.org/en/) version minimum of `6.9.5`, which is [the Long Term Support (LTS) version](https://github.com/nodejs/LTS#lts-schedule1), is required to use this plugin.
+Please note that [Node.js](https://nodejs.org/en/) version minimum of `8.11.1`, which is [the active Long Term Support (LTS) version](https://github.com/nodejs/Release#release-schedule), is required to use this plugin.
 
 ```sh
 npm install gulp-sakugawa --save-dev
