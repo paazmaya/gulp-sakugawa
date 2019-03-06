@@ -44,7 +44,7 @@
     "node": ">=8.11.1"
   },
   "dependencies": {
-    "sakugawa": "^0.5.3",
+    "sakugawa": "^0.6.0",
     "through2": "^3.0.0",
     "vinyl": "^2.2.0",
     "snyk": "^1.124.1"
