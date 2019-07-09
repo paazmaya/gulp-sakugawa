@@ -47,7 +47,7 @@
     "sakugawa": "^0.6.0",
     "through2": "^3.0.1",
     "vinyl": "^2.2.0",
-    "snyk": "^1.163.3"
+    "snyk": "^1.192.4"
   },
   "devDependencies": {
     "codecov": "3.4.0",
