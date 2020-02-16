@@ -6,7 +6,6 @@
  * Licensed under the MIT license.
  */
 
-'use strict';
 
 const path = require('path');
 
@@ -16,7 +15,9 @@ const File = require('vinyl');
 
 const sakugawa = require('sakugawa');
 
-const StringDecoder = require('string_decoder').StringDecoder;
+const {
+  StringDecoder
+} = require('string_decoder');
 
 module.exports = function gulpSakugawa(opts) {
   const options = {
