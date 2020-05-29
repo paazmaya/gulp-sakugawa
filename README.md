@@ -5,8 +5,7 @@
 
 ![Mr Sakugawa enjoying the taste of gulp](./logo.png)
 
-[![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/gulp-sakugawa/index?flat)](https://github.com/igrigorik/ga-beacon)
-[![Dependency Status](https://img.shields.io/david/paazmaya/gulp-sakugawa.svg?style=flat-square)](https://david-dm.org/paazmaya/gulp-sakugawa)
+[![Dependency Status](https://david-dm.org/paazmaya/gulp-sakugawa/status.svg)](https://david-dm.org/paazmaya/gulp-sakugawa)
 [![devDependency Status](https://img.shields.io/david/dev/paazmaya/gulp-sakugawa.svg?style=flat-square)](https://david-dm.org/paazmaya/gulp-sakugawa#info=devDependencies)
 [![wercker status](https://app.wercker.com/status/ece6b1297280d99cb32271fc8c1daf5b/s "wercker status")](https://app.wercker.com/project/bykey/ece6b1297280d99cb32271fc8c1daf5b)
 [![Windows build status](https://ci.appveyor.com/api/projects/status/paau5nxur49cx2ei/branch/master?svg=true)](https://ci.appveyor.com/project/paazmaya/gulp-sakugawa/branch/master)
@@ -30,14 +29,14 @@ resulting output or input handling, and also for any feature requests, please re
 
 ## Installation
 
-Please note that [Node.js](https://nodejs.org/en/) version minimum of `8.11.1`, which is [the active Long Term Support (LTS) version](https://github.com/nodejs/Release#release-schedule), is required to use this plugin.
+Please note that [Node.js](https://nodejs.org/en/) version minimum of `10.13.0`, which is [the active Long Term Support (LTS) version](https://github.com/nodejs/Release#release-schedule), is required to use this plugin.
 
 ```sh
 npm install gulp-sakugawa --save-dev
 ```
 
 ```js
-var gulpSakugawa = require('gulp-sakugawa');
+const gulpSakugawa = require('gulp-sakugawa');
 ```
 
 ## Usage
@@ -47,7 +46,7 @@ which results in two files, `pure-min_1.css` and `pure-min_2.css` in which the l
 contains all media queries.
 
 ```js
-var gulp = require('gulp'),
+const gulp = require('gulp'),
   gulpSakugawa = require('gulp-sakugawa');
 
 gulp.task('default', function() {
@@ -78,6 +77,8 @@ There should be no errors appearing after any JavaScript file changes.
 
 ## Version history
 
+* `v0.7.0` (2020-05-29)
+  - Minimum Node.js version lifted from `6.9.5` to `10.13.0`
 * `v0.6.0` (2017-06-28)
   - Minimum Node.js version lifted from `4.2.0` to `6.9.5`
   - All dependencies are up to date again
