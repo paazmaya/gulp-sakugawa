@@ -50,7 +50,7 @@
     "vinyl": "^2.2.0"
   },
   "devDependencies": {
-    "codecov": "3.7.0",
+    "codecov": "3.7.1",
     "eslint": "7.1.0",
     "eslint-config-paazmaya": "7.0.0",
     "gulp": "4.0.2"
