@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "sakugawa": "^0.6.0",
-    "snyk": "^1.425.4",
+    "snyk": "^1.518.0",
     "through2": "^3.0.1",
     "vinyl": "^2.2.0"
   },
