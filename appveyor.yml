@@ -1,7 +1,7 @@
 # http://www.appveyor.com/docs/lang/nodejs-iojs
 # Test against this version of Node.js
 environment:
-  nodejs_version: "12"
+  nodejs_version: "16"
 
 # Install scripts. (runs after repo cloning)
 install:

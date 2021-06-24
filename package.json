@@ -41,7 +41,7 @@
     "url": "https://github.com/paazmaya/gulp-sakugawa/issues"
   },
   "engines": {
-    "node": ">=10.13.0"
+    "node": ">=14.15.0"
   },
   "dependencies": {
     "sakugawa": "^0.6.0",
