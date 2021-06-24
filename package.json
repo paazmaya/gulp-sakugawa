@@ -12,9 +12,7 @@
   "scripts": {
     "test": "npm run lint",
     "coverage": "nyc npm test && codecov",
-    "lint": "eslint *.js",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "lint": "eslint *.js"
   },
   "files": [
     "index.js",
@@ -45,7 +43,6 @@
   },
   "dependencies": {
     "sakugawa": "^0.6.0",
-    "snyk": "^1.425.4",
     "through2": "^3.0.1",
     "vinyl": "^2.2.0"
   },
@@ -54,6 +51,5 @@
     "eslint": "7.1.0",
     "eslint-config-paazmaya": "7.0.0",
     "gulp": "4.0.2"
-  },
-  "snyk": true
+  }
 }
