@@ -5,7 +5,7 @@
 
 ![Mr Sakugawa enjoying the taste of gulp](./logo.png)
 
-[![Dependency Status](https://david-dm.org/paazmaya/gulp-sakugawa/status.svg)](https://david-dm.org/paazmaya/gulp-sakugawa)
+
 [![devDependency Status](https://img.shields.io/david/dev/paazmaya/gulp-sakugawa.svg?style=flat-square)](https://david-dm.org/paazmaya/gulp-sakugawa#info=devDependencies)
 [![wercker status](https://app.wercker.com/status/ece6b1297280d99cb32271fc8c1daf5b/s "wercker status")](https://app.wercker.com/project/bykey/ece6b1297280d99cb32271fc8c1daf5b)
 [![Windows build status](https://ci.appveyor.com/api/projects/status/paau5nxur49cx2ei/branch/master?svg=true)](https://ci.appveyor.com/project/paazmaya/gulp-sakugawa/branch/master)
