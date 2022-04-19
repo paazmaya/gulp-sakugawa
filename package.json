@@ -42,9 +42,9 @@
     "node": ">=14.15.0"
   },
   "dependencies": {
-    "sakugawa": "^0.7.0",
-    "through2": "^3.0.2",
-    "vinyl": "^2.2.1"
+    "sakugawa": "0.7.0",
+    "through2": "3.0.2",
+    "vinyl": "2.2.1"
   },
   "devDependencies": {
     "codecov": "3.8.2",
